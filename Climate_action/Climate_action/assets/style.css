@@ -1,0 +1,135 @@
+body{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #cad6e3;
+}
+
+.hero {
+    background-image: url('https://source.unsplash.com/1600x900/?climate,environment');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+.hero .content {
+    position: relative;
+    z-index: 1;
+}
+.hero .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 210%;
+    overflow: hidden;
+    z-index: 2;
+}
+.hero .video-background video {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+    opacity: 0.5; /* Adjust the opacity for better text visibility */
+}
+/* Apply Animations */
+.hero h1 {
+    animation: slideIn 5s ease-in-out;
+}
+
+.hero p, .hero h3 {
+    animation: fadeIn 10s ease-in-out;
+}
+/* Animation Keyframes */
+@keyframes slideIn {
+   from {
+       transform: translateX(-100%);
+       opacity: 0;
+   }
+   to {
+       transform: translateX(0);
+       opacity: 1;
+   }
+}
+
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+.section {
+    padding: 60px 20px;
+}
+.footer {
+    background-color:#333;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+    .social-icons {
+        text-align:center; /* Align icons to the right */
+        margin-top: 10px; /* Adjust margin as needed */
+    }
+    .social-icons a {
+        color: #fff; /* Set icon color */
+        font-size: 24px; /* Adjust icon size */
+        margin-left: 10px; /* Adjust spacing between icons */
+    }
+    .custom-card {
+        background-color: #d6ccca; /* Light background color */
+        border: none; /* Remove border */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+        transition: transform 0.3s; /* Smooth transition for hover effect */
+        position: relative;
+    }
+    /* Custom styles for the contact form */
+    body{
+        background-color: #cad6e3;
+    }
+#contact .form-group {
+    margin-bottom: 15px;
+}
+
+#contact .form-control {
+    border-radius: 0;
+    border: 1px solid #ced4da;
+}
+
+#contact .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+    .custom-card:hover {
+        transform: translateY(-10px); /* Lift card slightly on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    }
+.item{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #cad6e3;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
